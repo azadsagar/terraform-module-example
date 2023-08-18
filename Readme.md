@@ -12,8 +12,8 @@ No providers.
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_basicsg"></a> [basicsg](#module\_basicsg) | ./modules/basic-sgs | n/a |
-| <a name="module_network"></a> [network](#module\_network) | ./modules/network | n/a |
+| <a name="module_basicsg"></a> [basicsg](#module\_basicsg) | git::https://github.com/azadsagar/terraform-aws-basicsgs.git | main |
+| <a name="module_network"></a> [network](#module\_network) | git::https://github.com/azadsagar/terraform-aws-network.git | main |
 
 ## Resources
 
