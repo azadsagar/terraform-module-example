@@ -1,4 +1,7 @@
 
+terraform {
+  backend "s3" {}
+}
 
 module "network" {
   source = "git::https://github.com/azadsagar/terraform-aws-network.git?ref=main"
@@ -22,8 +25,8 @@ module "network" {
   use_nat_gateway            = var.use_nat_gateway
   enable_multiaz_nat_gateway = var.enable_multiaz_nat_gateway
 
-  namespace       = "rsystem"
-  stage           = "dev"
+  namespace       = var.namespace
+  stage           = var.stage
   additional_tags = var.additional_tags
 }
 
@@ -39,7 +42,7 @@ module "basicsg" {
 
   default_db_port = var.default_db_port
 
-  namespace       = "demo"
-  stage           = "dev"
+  namespace       = var.namespace
+  stage           = var.stage
   additional_tags = var.additional_tags
 }

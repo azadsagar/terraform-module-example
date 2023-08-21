@@ -7,3 +7,8 @@ namespace                  = "demo"
 stage                      = "dev"
 use_nat_gateway            = true
 enable_multiaz_nat_gateway = false
+enable_vpc_flow_logs       = true
+
+additional_tags = {
+  CreateBy = "sagar.barai@velotio.com"
+}
